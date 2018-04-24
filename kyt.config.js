@@ -22,8 +22,8 @@ module.exports = {
         })
       );
     }
-    config.output.path = path.resolve(appDirectory, 'docs');
-    config.outut.publicPath = '/docs';
+    config.output.path = path.resolve(__dirname, 'docs');
+    config.output.publicPath = '/docs';
 
     return config;
   },
