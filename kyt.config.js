@@ -1,4 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const fs = require('fs');
+const appDirectory = fs.realpathSync(process.cwd());
 
 module.exports = {
   reactHotLoader: true,
@@ -19,7 +22,7 @@ module.exports = {
         })
       );
     }
-
+    config.output.path = path.resolve(appDirectory, 'docs');
     return config;
   },
 };
