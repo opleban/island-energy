@@ -23,6 +23,8 @@ module.exports = {
       );
     }
     config.output.path = path.resolve(appDirectory, 'docs');
+    config.outut.publicPath = '/docs';
+
     return config;
   },
 };
