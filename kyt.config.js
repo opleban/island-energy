@@ -23,7 +23,7 @@ module.exports = {
       );
     }
     config.output.path = path.resolve(__dirname, 'docs');
-    config.output.publicPath = '/island-energy/docs';
+    config.output.publicPath = '/island-energy';
 
     return config;
   },
